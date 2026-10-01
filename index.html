@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Технологии разработки ПО — Практическая работа №1</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#about" class="logo-link">
+        <img src="dataset/assets/logo.svg" alt="Логотип курса" class="site-logo">
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">О курсе</a></li>
+          <li><a href="#tracks" class="nav-link">Направления</a></li>
+          <li><a href="#schedule" class="nav-link">Расписание</a></li>
+          <li><a href="#signup" class="nav-link">Регистрация</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-text">
+          <h1>Технологии разработки программного обеспечения</h1>
+          <p>Практическая работа №1. Изучение семантической структуры HTML5 и базовых правил стилизации CSS на основе dataset.</p>
+          <a href="#signup" class="btn btn-primary">Записаться на курс</a>
+        </div>
+        <div class="hero-image-wrapper">
+          <img src="dataset/assets/cover.svg" alt="Обложка курса" class="hero-cover">
+        </div>
+      </div>
+    </section>
+
+    <section id="tracks" class="cards-section container">
+      <h2>Направления обучения</h2>
+      <p class="section-desc">Ключевые темы и модули курса из content.csv.</p>
+      
+      <div class="cards-grid">
+        <article class="card">
+          <span class="card-badge">Основа</span>
+          <h3 class="card-title">HTML</h3>
+          <p class="card-text">Структура и семантика документа</p>
+          <div class="card-footer">
+            <span class="card-value">Объем: 8 ч.</span>
+            <a href="#signup" class="card-link">Выбрать &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card-badge">Оформление</span>
+          <h3 class="card-title">CSS</h3>
+          <p class="card-text">Стили и адаптивность</p>
+          <div class="card-footer">
+            <span class="card-value">Объем: 9 ч.</span>
+            <a href="#signup" class="card-link">Выбрать &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card-badge">Инструменты</span>
+          <h3 class="card-title">Git</h3>
+          <p class="card-text">История изменений</p>
+          <div class="card-footer">
+            <span class="card-value">Объем: 7 ч.</span>
+            <a href="#signup" class="card-link">Выбрать &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card-badge">HTML</span>
+          <h3 class="card-title">Forms</h3>
+          <p class="card-text">Пользовательский ввод</p>
+          <div class="card-footer">
+            <span class="card-value">Объем: 6 ч.</span>
+            <a href="#signup" class="card-link">Выбрать &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card-badge">Качество</span>
+          <h3 class="card-title">Accessibility</h3>
+          <p class="card-text">Доступность интерфейса</p>
+          <div class="card-footer">
+            <span class="card-value">Объем: 10 ч.</span>
+            <a href="#signup" class="card-link">Выбрать &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card-badge">Проверка</span>
+          <h3 class="card-title">DevTools</h3>
+          <p class="card-text">Исследование DOM и стилей</p>
+          <div class="card-footer">
+            <span class="card-value">Объем: 8 ч.</span>
+            <a href="#signup" class="card-link">Выбрать &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="schedule" class="table-section container">
+      <h2>Расписание и объём модулей</h2>
+      <p class="section-desc">Табличный обзор данных из файла dataset/content.csv.</p>
+
+      <div class="table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Название (Title)</th>
+              <th scope="col">Категория (Category)</th>
+              <th scope="col">Описание (Description)</th>
+              <th scope="col">Часы (Value)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><strong>HTML</strong></td>
+              <td>Основа</td>
+              <td>Структура и семантика документа</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><strong>CSS</strong></td>
+              <td>Оформление</td>
+              <td>Стили и адаптивность</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><strong>Git</strong></td>
+              <td>Инструменты</td>
+              <td>История изменений</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><strong>Forms</strong></td>
+              <td>HTML</td>
+              <td>Пользовательский ввод</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><strong>Accessibility</strong></td>
+              <td>Качество</td>
+              <td>Доступность интерфейса</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><strong>DevTools</strong></td>
+              <td>Проверка</td>
+              <td>Исследование DOM и стилей</td>
+              <td>8</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="signup" class="form-section container">
+      <h2>Форма регистрации</h2>
+      <p class="section-desc">Заполните форму для участия в практическом модуле.</p>
+
+      <form action="#" method="post" class="feedback-form">
+        <div class="form-group">
+          <label for="user-name">ФИО студента <span class="required-mark">*</span></label>
+          <input type="text" id="user-name" name="userName" required minlength="2" maxlength="50" placeholder="Иванов Артем">
+        </div>
+
+        <div class="form-group">
+          <label for="user-email">Электронная почта <span class="required-mark">*</span></label>
+          <input type="email" id="user-email" name="userEmail" required placeholder="student@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="user-experience">Опыт программирования (в годах) <span class="required-mark">*</span></label>
+          <input type="number" id="user-experience" name="userExperience" required min="0" max="20" step="1" value="0">
+        </div>
+
+        <div class="form-group">
+          <label for="track-select">Интересующий модуль <span class="required-mark">*</span></label>
+          <select id="track-select" name="track" required>
+            <option value="" disabled selected>Выберите модуль...</option>
+            <option value="html">HTML (Основа)</option>
+            <option value="css">CSS (Оформление)</option>
+            <option value="git">Git (Инструменты)</option>
+            <option value="forms">Forms (HTML)</option>
+            <option value="a11y">Accessibility (Качество)</option>
+            <option value="devtools">DevTools (Проверка)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="user-message">Комментарий или вопрос <span class="required-mark">*</span></label>
+          <textarea id="user-message" name="message" rows="4" required minlength="10" maxlength="300" placeholder="Введите ваш комментарий (минимум 10 символов)..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-submit">Зарегистрироваться</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Кафедра индустриального программирования. Дисциплина: ТРПО.</p>
+      <p>Преподаватель: Макиевский С.Е.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
